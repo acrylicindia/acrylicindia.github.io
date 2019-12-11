@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+  
+  <body>
+    
+  <div class="site-wrap">
+    
+    <div class="site-navbar bg-white py-2">
+
+{% include search.html %}
+
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+
+{% include logo.html %}
+          
+          <div class="main-nav d-none d-lg-block">
+
+{% include nav.html %}
+            
+          </div>
+          
+{% include icons.html %}
+          
+        </div>
+      </div>
+    </div>
+    
+    <div hidden id="snipcart" data-api-key="OWNlYjBkNDAtNzhlNi00ZGQzLTljMTctNjc5ZmJmNzM2MGFlNjM3MTEyNDI2MTEyOTk3NTIz"></div>
+    <script src="https://cdn.snipcart.com/themes/v3.0/default/snipcart.js" defer></script>
+    
+{{ content }}
+
+{% include footer.html %}
+    
+  </div>
+
+   
+{% include scripts.html %}
+    
+  </body>
+</html>

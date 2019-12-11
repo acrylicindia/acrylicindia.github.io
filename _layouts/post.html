@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+
+<div class="bg-light py-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 mb-0"><a href="{{ site.baseurl }}">Home</a>  
+				<span class="mx-2 mb-0">/</span>  
+				<a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a>  
+				<span class="mx-2 mb-0">/</span>  
+				<strong class="text-black">{{ page.title }}</strong>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="site-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="item-entry">
+					<a href="{{ page.image }}" class="product-item md-height bg-gray d-block">
+						<img src="{{ page.image }}" alt="Image" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="product">
+				<h2 class="text-black">{{ page.title }}</h2>
+				<hr>
+				<p>{{ page.desc }}</p>
+				<br>
+				<p><strong class="text-primary h4">₹ {{ page.price }}</strong>
+				</p>
+				<br>
+				<p>
+					<button
+					  class="buy-button snipcart-add-item buy-now btn btn-sm height-auto px-4 py-3 btn-primary"
+					  data-item-id="{{ page.identifier }}"
+					  data-item-name="{{ page.title }}"
+					  data-item-price="{{ page.price }}"
+					  data-item-image="{{ page.image }}"
+					  data-item-url="{{ site.baseurl }}{{ page.url }}"
+					  data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}"
+					  data-item-custom1-name="Size"
+ 					  data-item-custom1-options="{{ page.sizes }}">
+					  Add to Cart
+					</button>
+				</p>
+				<br> <hr>
+				<p>{{ page.content }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
