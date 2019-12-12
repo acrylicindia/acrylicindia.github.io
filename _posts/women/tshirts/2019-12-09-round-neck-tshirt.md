@@ -1,5 +1,5 @@
 ---
-title: Women's Round Neck T-Shirt
+title: Round Neck T-Shirt
 buy: "#"
 categories: [women, t-shirts]
 price: 399
