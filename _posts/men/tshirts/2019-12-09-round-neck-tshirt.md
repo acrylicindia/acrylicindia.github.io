@@ -1,5 +1,5 @@
 ---
-title: Men's Round Neck T-Shirt
+title: Round Neck T-Shirt
 buy: "#"
 categories: [men, t-shirts]
 price: 399
