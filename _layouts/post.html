@@ -9,13 +9,13 @@ layout: default
 			<div class="col-md-12 mb-0"><a href="{{ site.url }}">Home</a>  
 				<span class="mx-2 mb-0">/</span>
 				
-				{% for category in page.categories %}
+				{% for categories in page.categories %}
 				
-				<strong class="text-black">{{ page.category[0] }}</strong>
+				<strong class="text-black">{{ page.categories[0] }}</strong>
 				
 				<span class="mx-2 mb-0">/</span>
 				
-				<strong class="text-black">{{ page.category[1] }}</strong>
+				<strong class="text-black">{{ page.categories[1] }}</strong>
 				
 				{% endfor %}
 				
