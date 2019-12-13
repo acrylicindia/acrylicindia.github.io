@@ -1,5 +1,5 @@
 ---
-title: White Seaners
+title: White Sneakers
 desc: Sneakers are not just shoes, they are a feeling.
 buy: "#"
 categories: [sneakers]
