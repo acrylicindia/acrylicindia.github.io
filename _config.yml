@@ -9,3 +9,7 @@ defaults:
       layout: "post"
       permalink: /:categories/:title
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
